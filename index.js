@@ -22,11 +22,11 @@ exports.detectFormat = function (buffer) {
 
 exports.convert = async function (buffer, toFormat, fromFormat) {
   if (!supportedFormats.has(toFormat)) {
-    throw new Error(`Cannot convert to ${toFormat}`);
+    throw new Error(`Unsupported target format: ${toFormat}`);
   }
   if (fromFormat) {
     if (!supportedFormats.has(fromFormat)) {
-      throw new Error(`Cannot convert from ${toFormat}`);
+      throw new Error(`Unsupported source format: ${fromFormat}`);
     }
   } else {
     fromFormat = exports.detectFormat(buffer);
