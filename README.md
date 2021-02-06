@@ -28,3 +28,7 @@ If `toFormat` is the same as the current format (as specified by `fromFormat` or
 #### `fontverter.detectFormat(buffer): String`
 
 Returns the detected format of the font contained in `buffer` (either `'truetype'`, `'woff'`, or `'woff2'`), or throws an exception if the format could not be detected.
+
+## License
+
+3-clause BSD license -- see the `LICENSE` file for details.
