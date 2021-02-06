@@ -25,6 +25,14 @@ describe('fontverter.convert', function () {
       );
     });
 
+    it('should throw if the target format is not supported', async function () {
+      expect(
+        () => fontverter.convert(this.truetype, 'footype'),
+        'to error',
+        'Unsupported target format: footype'
+      );
+    });
+
     it('should convert a truetype font to truetype', async function () {
       const buffer = await fontverter.convert(this.truetype, 'truetype');
       expect(fontverter.detectFormat(buffer), 'to equal', 'truetype');
@@ -75,6 +83,14 @@ describe('fontverter.convert', function () {
   });
 
   describe('when the source format is given', function () {
+    it('should throw if the source format is not supported', async function () {
+      expect(
+        () => fontverter.convert(Buffer.from('abcd'), 'truetype', 'footype'),
+        'to error',
+        'Unsupported source format: footype'
+      );
+    });
+
     it('should convert a truetype font to truetype', async function () {
       const buffer = await fontverter.convert(
         this.truetype,
