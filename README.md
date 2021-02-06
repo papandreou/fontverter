@@ -29,6 +29,10 @@ If `toFormat` is the same as the current format (as specified by `fromFormat` or
 
 Returns the detected format of the font contained in `buffer` (either `'truetype'`, `'woff'`, or `'woff2'`), or throws an exception if the format could not be detected.
 
+## Releases
+
+[Changelog](https://github.com/papandreou/fontverter/blob/master/CHANGELOG.md)
+
 ## License
 
 3-clause BSD license -- see the `LICENSE` file for details.
