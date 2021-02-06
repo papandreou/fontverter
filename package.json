@@ -1,0 +1,52 @@
+{
+  "name": "fontverter",
+  "version": "0.0.0",
+  "description": "Convert font buffers between TTF/WOFF/WOFF2",
+  "main": "index.js",
+  "dependencies": {
+    "wawoff2": "^1.0.2",
+    "woff2sfnt-sfnt2woff": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-standard": "^16.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "offline-github-changelog": "^2.0.0",
+    "prettier": "~2.2.0",
+    "unexpected": "^12.0.0"
+  },
+  "scripts": {
+    "lint": "eslint . && prettier --check '**/*.{js,json,md}'",
+    "test": "mocha",
+    "test:ci": "npm run coverage",
+    "coverage": "nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
+    "preversion": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papandreou/fontverter.git"
+  },
+  "keywords": [
+    "font",
+    "convert",
+    "transcode",
+    "TTF",
+    "WOFF",
+    "WOFF2",
+    "wasm"
+  ],
+  "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/papandreou/fontverter/issues"
+  },
+  "homepage": "https://github.com/papandreou/fontverter#readme"
+}
