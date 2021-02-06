@@ -1,6 +1,6 @@
 {
   "name": "fontverter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert font buffers between TTF/WOFF/WOFF2",
   "main": "index.js",
   "dependencies": {
