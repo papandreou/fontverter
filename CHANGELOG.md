@@ -1,3 +1,9 @@
+### v1.0.1 (2021-04-04)
+
+- [Update wawoff2 to ^2.0.0](https://github.com/papandreou/fontverter/commit/e71ed96b69ba646633fc0255e1e00f0a1a5112a2) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [README: Link to the changelog](https://github.com/papandreou/fontverter/commit/5d30f6ead542c366eb8ddaee4823fa3b470dfe50) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [README: Mention and link to the license](https://github.com/papandreou/fontverter/commit/a25ca9e14163253d8e080a9d96d63d6b24de87b6) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+
 ### v1.0.0 (2021-02-06)
 
 - [Add a quick README](https://github.com/papandreou/fontverter/commit/01c716373100013f54b1dac69720c84f09959373) ([Andreas Lind](mailto:andreas.lind@peakon.com))
