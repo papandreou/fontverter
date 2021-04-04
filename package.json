@@ -4,7 +4,7 @@
   "description": "Convert font buffers between TTF/WOFF/WOFF2",
   "main": "index.js",
   "dependencies": {
-    "wawoff2": "^1.0.2",
+    "wawoff2": "^2.0.0",
     "woff2sfnt-sfnt2woff": "^1.0.0"
   },
   "devDependencies": {
