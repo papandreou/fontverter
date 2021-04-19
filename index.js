@@ -1,7 +1,7 @@
 const wawoff2 = require('wawoff2');
 const woffTool = require('woff2sfnt-sfnt2woff');
 
-const supportedFormats = new Set(['truetype', 'woff', 'woff2']);
+const supportedFormats = new Set(['sfnt', 'woff', 'woff2']);
 
 exports.detectFormat = function (buffer) {
   const signature = buffer.toString('ascii', 0, 4);
@@ -14,13 +14,19 @@ exports.detectFormat = function (buffer) {
     signature === 'OTTO' ||
     signature === '\x00\x01\x00\x00'
   ) {
-    return 'truetype';
+    return 'sfnt';
   } else {
     throw new Error(`Unrecognized font signature: ${signature}`);
   }
 };
 
 exports.convert = async function (buffer, toFormat, fromFormat) {
+  if (toFormat === 'truetype') {
+    toFormat = 'sfnt';
+  }
+  if (fromFormat === 'truetype') {
+    fromFormat = 'sfnt';
+  }
   if (!supportedFormats.has(toFormat)) {
     throw new Error(`Unsupported target format: ${toFormat}`);
   }
