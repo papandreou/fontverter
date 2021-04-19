@@ -1,3 +1,7 @@
+### v2.0.0 (2021-04-19)
+
+- [truetype =&gt; sfnt \(semver-major\)](https://github.com/papandreou/fontverter/commit/4b5473931b8b715c83767f75c93a9f76aef63dcb) ([Andreas Lind](mailto:andreas.lind@workday.com))
+
 ### v1.0.1 (2021-04-04)
 
 - [Update wawoff2 to ^2.0.0](https://github.com/papandreou/fontverter/commit/e71ed96b69ba646633fc0255e1e00f0a1a5112a2) ([Andreas Lind](mailto:andreas.lind@peakon.com))
