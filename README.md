@@ -24,7 +24,7 @@ If `fromFormat` is omitted, the source format will be detected based on the sign
 
 For backwards compatibility reasons, `'truetype'` is supported as an alias for `'sfnt'` in both `toFormat` and `fromFormat`.
 
-Returns a promise that fulfills with the converted font as a Buffer instance, or rejected with an error.
+Returns a promise that is fulfilled with the converted font as a Buffer instance, or rejected with an error.
 If `toFormat` is the same as the current format (as specified by `fromFormat` or detected), the original buffer instance will be returned without any conversion taking place.
 
 #### `fontverter.detectFormat(buffer): String`
