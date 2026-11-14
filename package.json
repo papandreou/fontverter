@@ -43,6 +43,7 @@
     "WOFF2",
     "wasm"
   ],
+  "types": "index.d.ts",
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
